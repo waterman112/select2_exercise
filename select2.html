@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<!--
+  这里需要注意的是：select2插件的使用，需要jquery，这时候，我们应该加载jquery，并且加载的顺序应该放到selecr2之前。
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>select2</title>
+    <link rel="stylesheet" type="text/css" href="select2.css" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="select2.js"></script>
+  </head>
+  <body>
+    <select class="js-example-basic-single">
+      <option value="AL">Alabama</option>
+      <option value="BL">Blabama</option>
+      <option value="CL">Clabama</option>
+    </select>
+    <script>
+$(document).ready(function(){
+  $('.js-example-basic-single').select2();
+})
+    </script>
+  </body>
+</html>
